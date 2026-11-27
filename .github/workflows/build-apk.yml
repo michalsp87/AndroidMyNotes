@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - add-github-action-workflow
+      - stable-apk-signing
   workflow_dispatch:
 
 permissions:
@@ -28,6 +28,19 @@ jobs:
 
       - name: Install Android SDK platform 37.0
         run: '"$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "platforms;android-37.0"'
+
+      - name: Restore app signing key
+        env:
+          MY_NOTES_DEBUG_KEYSTORE: ${{ secrets.MY_NOTES_DEBUG_KEYSTORE }}
+        run: |
+          if [[ -z "$MY_NOTES_DEBUG_KEYSTORE" ]]; then
+            echo "::error::Missing MY_NOTES_DEBUG_KEYSTORE repository secret."
+            exit 1
+          fi
+          install -d -m 700 "$HOME/.android"
+          umask 077
+          printf '%s' "$MY_NOTES_DEBUG_KEYSTORE" | base64 --decode > "$HOME/.android/debug.keystore"
+
 
       - name: Build debug APK
         run: ./gradlew --no-daemon :app:assembleDebug
