@@ -1,0 +1,16 @@
+# Gradle and Android build output
+.gradle/
+.kotlin/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Local SDK configuration and IDE files
+local.properties
+.idea/
+*.iml
+
+# Local signing keys
+*.jks
+*.keystore
