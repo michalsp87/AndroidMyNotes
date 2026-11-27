@@ -14,3 +14,5 @@ local.properties
 # Local signing keys
 *.jks
 *.keystore
+
+.DS_Store

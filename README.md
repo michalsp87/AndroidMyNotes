@@ -11,4 +11,4 @@ My Notes to planowana aplikacja na Androida do tworzenia, edytowania i usuwania 
 
 Lista notatek posortowana według ostatniej edycji oraz edytor z polami tytułu i treści. Pierwsze uruchomienie jest planowane na telefonie Motorola Moto G67.
 
-Repozytorium zawiera na razie pliki startowe. Projekt Android Studio nie został jeszcze utworzony.
+Repozytorium zawiera projekt startowy Android Studio z ekranem Compose. Funkcje notatek i zapis w Room są planowane.
