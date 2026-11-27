@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">My Notes</string>
+    <string name="note_new">New note</string>
+    <string name="note_edit">Edit note</string>
+    <string name="notes_empty">No notes yet</string>
+    <string name="note_untitled">Untitled</string>
+    <string name="note_title">Title</string>
+    <string name="note_body">Note</string>
+    <string name="note_save">Save</string>
+    <string name="note_cancel">Cancel</string>
+    <string name="note_delete">Delete</string>
+    <string name="note_delete_title">Delete note?</string>
+    <string name="note_delete_message">This note will be permanently deleted.</string>
+    <string name="notes_retry">Try again</string>
+    <string name="notes_load_error">Could not load notes.</string>
+    <string name="notes_save_error">Could not save the note.</string>
+    <string name="notes_delete_error">Could not delete the note.</string>
 </resources>

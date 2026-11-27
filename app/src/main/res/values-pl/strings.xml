@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My Notes</string>
+    <string name="note_new">Nowa notatka</string>
+    <string name="note_edit">Edytuj notatkę</string>
+    <string name="notes_empty">Brak notatek</string>
+    <string name="note_untitled">Bez tytułu</string>
+    <string name="note_title">Tytuł</string>
+    <string name="note_body">Treść</string>
+    <string name="note_save">Zapisz</string>
+    <string name="note_cancel">Anuluj</string>
+    <string name="note_delete">Usuń</string>
+    <string name="note_delete_title">Usunąć notatkę?</string>
+    <string name="note_delete_message">Notatka zostanie trwale usunięta.</string>
+    <string name="notes_retry">Spróbuj ponownie</string>
+    <string name="notes_load_error">Nie udało się wczytać notatek.</string>
+    <string name="notes_save_error">Nie udało się zapisać notatki.</string>
+    <string name="notes_delete_error">Nie udało się usunąć notatki.</string>
+</resources>
